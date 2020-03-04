@@ -36,9 +36,9 @@ Finally add this to the Gemfile:
 
 ### Install from Git
 
-If the Ruby gem is hosted at a git repository: https://github.com/GIT_USER_ID/GIT_REPO_ID, then add the following in the Gemfile:
+If the Ruby gem is hosted at a git repository: https://github.com/sriprasanna/reliefweb-api-ruby-client, then add the following in the Gemfile:
 
-    gem 'reliefweb-api', :git => 'https://github.com/GIT_USER_ID/GIT_REPO_ID.git'
+    gem 'reliefweb-api', :git => 'https://github.com/sriprasanna/reliefweb-api-ruby-client.git'
 
 ### Include the Ruby code directly
 
@@ -57,32 +57,32 @@ require 'reliefweb-api'
 
 api_instance = ReliefWebAPI::CountriesApi.new
 
-opts = { 
-  query_value: 'query_value_example', # String | Specify the terms of your fuzzy search. The default is no query. 
-  query_operator: 'query_operator_example', # String | Specify the operator by which your search query words will be combined. 
-  query_fields: ['query_fields_example'], # Array<String> | Specify which fields to target with your search. You may use boost syntax here, see the Advanced API Usage documentation. 
-  filter_field: 'filter_field_example', # String | Field to filter by. Every condition must contain either a <code>field</code> or <code>conditions</code> property. 
-  filter_value: ['filter_value_example'], # Array<String> | Value for the field being filtered. Leave blank to require existence of the field, must be present for <code>range</code> and <code>value</code> conditions. 
-  filter_operator: 'filter_operator_example', # String | Operator by which filters will be combined. 
-  filter_negate: true, # BOOLEAN | Reverse the filter to include those items that do not match. 
-  filter_conditions: ['filter_conditions_example'], # Array<String> | This property is used to combine conditions with a logical connector (the <code>operator</code> property). Every condition must contain one of the <code>field</code> or <code>conditions</code> properties. 
-  facets_field: 'facets_field_example', # String | Field to facet by. May include dates, references or the status field. 
-  facets_name: 'facets_name_example', # String | Identifier for resulting facet data. Useful when faceting multiple ways on the same field. 
-  facets_limit: 56, # Integer | Limit the number of facets returned for non-date based facets. 
-  facets_sort: 'facets_sort_example', # String | The sort order of non-date facets. Sorting may be by <code>value</code> or <code>count</code> of terms, and ascending or descending. <code>count</code> defaults to <code>desc</code>, <code>value</code> defaults to <code>asc</code>. 
-  facets_filter: ['facets_filter_example'], # Array<String> | Apply all the same capabilities of the filter parameter to the specific results of this facet request. 
-  facets_interval: 'facets_interval_example', # String | Round date information to the nearest interval unit. Apply all the same capabilities of the filter parameter to the specific results of this facet request. 
-  fields_include: ['fields_include_example'], # Array<String> | Specify which fields to include for each item. Defaults to an item label. 
-  fields_exclude: ['fields_exclude_example'] # Array<String> | Specify sub-fields to exclude from overall results. For example, if you include <code>date</code> you may exclude <code>date.changed</code>. 
-  limit: 10, # Integer | The maximum number of items to return for a list query. The default is <code>10</code> and the maximum <code>1000</code>. 
-  offset: 0, # Integer | The offset from which to return the items in a list query. Allows paging through all results. The default is <code>0</code>. 
-  sort: ['sort_example'], # Array<String> | Sort the list results. Defaults to search relevance. Values in the form of <code>fieldname:(asc|desc)</code>. 
-  profile: 'profile_example', # String | Pre-built standard selections of fields to return for ease of displaying lists or items. 
-  preset: 'preset_example' # String | Pre-built standard configurations of queries, filters and sorts for common use cases. 
+opts = {
+  query_value: 'query_value_example', # String | Specify the terms of your fuzzy search. The default is no query.
+  query_operator: 'query_operator_example', # String | Specify the operator by which your search query words will be combined.
+  query_fields: ['query_fields_example'], # Array<String> | Specify which fields to target with your search. You may use boost syntax here, see the Advanced API Usage documentation.
+  filter_field: 'filter_field_example', # String | Field to filter by. Every condition must contain either a <code>field</code> or <code>conditions</code> property.
+  filter_value: ['filter_value_example'], # Array<String> | Value for the field being filtered. Leave blank to require existence of the field, must be present for <code>range</code> and <code>value</code> conditions.
+  filter_operator: 'filter_operator_example', # String | Operator by which filters will be combined.
+  filter_negate: true, # BOOLEAN | Reverse the filter to include those items that do not match.
+  filter_conditions: ['filter_conditions_example'], # Array<String> | This property is used to combine conditions with a logical connector (the <code>operator</code> property). Every condition must contain one of the <code>field</code> or <code>conditions</code> properties.
+  facets_field: 'facets_field_example', # String | Field to facet by. May include dates, references or the status field.
+  facets_name: 'facets_name_example', # String | Identifier for resulting facet data. Useful when faceting multiple ways on the same field.
+  facets_limit: 56, # Integer | Limit the number of facets returned for non-date based facets.
+  facets_sort: 'facets_sort_example', # String | The sort order of non-date facets. Sorting may be by <code>value</code> or <code>count</code> of terms, and ascending or descending. <code>count</code> defaults to <code>desc</code>, <code>value</code> defaults to <code>asc</code>.
+  facets_filter: ['facets_filter_example'], # Array<String> | Apply all the same capabilities of the filter parameter to the specific results of this facet request.
+  facets_interval: 'facets_interval_example', # String | Round date information to the nearest interval unit. Apply all the same capabilities of the filter parameter to the specific results of this facet request.
+  fields_include: ['fields_include_example'], # Array<String> | Specify which fields to include for each item. Defaults to an item label.
+  fields_exclude: ['fields_exclude_example'] # Array<String> | Specify sub-fields to exclude from overall results. For example, if you include <code>date</code> you may exclude <code>date.changed</code>.
+  limit: 10, # Integer | The maximum number of items to return for a list query. The default is <code>10</code> and the maximum <code>1000</code>.
+  offset: 0, # Integer | The offset from which to return the items in a list query. Allows paging through all results. The default is <code>0</code>.
+  sort: ['sort_example'], # Array<String> | Sort the list results. Defaults to search relevance. Values in the form of <code>fieldname:(asc|desc)</code>.
+  profile: 'profile_example', # String | Pre-built standard selections of fields to return for ease of displaying lists or items.
+  preset: 'preset_example' # String | Pre-built standard configurations of queries, filters and sorts for common use cases.
 }
 
 begin
-  #List or search countries covered by ReliefWeb. 
+  #List or search countries covered by ReliefWeb.
   result = api_instance.get_countries(opts)
   p result
 rescue ReliefWebAPI::ApiError => e
@@ -97,26 +97,26 @@ All URIs are relative to *http://api.reliefweb.int/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ReliefWebAPI::CountriesApi* | [**get_countries**](docs/CountriesApi.md#get_countries) | **GET** /countries | List or search countries covered by ReliefWeb. 
+*ReliefWebAPI::CountriesApi* | [**get_countries**](docs/CountriesApi.md#get_countries) | **GET** /countries | List or search countries covered by ReliefWeb.
 *ReliefWebAPI::CountriesApi* | [**get_country_by_id**](docs/CountriesApi.md#get_country_by_id) | **GET** /countries/{countryId} | Find country by its unique ID
-*ReliefWebAPI::CountriesApi* | [**search_countries**](docs/CountriesApi.md#search_countries) | **POST** /countries | List or search countries covered by ReliefWeb. 
+*ReliefWebAPI::CountriesApi* | [**search_countries**](docs/CountriesApi.md#search_countries) | **POST** /countries | List or search countries covered by ReliefWeb.
 *ReliefWebAPI::DisastersApi* | [**get_disaster_by_id**](docs/DisastersApi.md#get_disaster_by_id) | **GET** /disasters/{disasterId} | Find disaster by its unique ID
-*ReliefWebAPI::DisastersApi* | [**get_disasters**](docs/DisastersApi.md#get_disasters) | **GET** /disasters | List or search disasters covered by ReliefWeb. 
-*ReliefWebAPI::DisastersApi* | [**search_disasters**](docs/DisastersApi.md#search_disasters) | **POST** /disasters | List or search disasters covered by ReliefWeb. 
-*ReliefWebAPI::DiscoveryApi* | [**discovery_resources**](docs/DiscoveryApi.md#discovery_resources) | **GET** / | 
-*ReliefWebAPI::DiscoveryApi* | [**discovery_versions**](docs/DiscoveryApi.md#discovery_versions) | **GET** /../ | 
+*ReliefWebAPI::DisastersApi* | [**get_disasters**](docs/DisastersApi.md#get_disasters) | **GET** /disasters | List or search disasters covered by ReliefWeb.
+*ReliefWebAPI::DisastersApi* | [**search_disasters**](docs/DisastersApi.md#search_disasters) | **POST** /disasters | List or search disasters covered by ReliefWeb.
+*ReliefWebAPI::DiscoveryApi* | [**discovery_resources**](docs/DiscoveryApi.md#discovery_resources) | **GET** / |
+*ReliefWebAPI::DiscoveryApi* | [**discovery_versions**](docs/DiscoveryApi.md#discovery_versions) | **GET** /../ |
 *ReliefWebAPI::JobsApi* | [**get_job_by_id**](docs/JobsApi.md#get_job_by_id) | **GET** /jobs/{jobId} | Find job by its unique ID
-*ReliefWebAPI::JobsApi* | [**get_jobs**](docs/JobsApi.md#get_jobs) | **GET** /jobs | List or search humanitarian job offers. 
-*ReliefWebAPI::JobsApi* | [**search_jobs**](docs/JobsApi.md#search_jobs) | **POST** /jobs | List or search humanitarian job offers. 
+*ReliefWebAPI::JobsApi* | [**get_jobs**](docs/JobsApi.md#get_jobs) | **GET** /jobs | List or search humanitarian job offers.
+*ReliefWebAPI::JobsApi* | [**search_jobs**](docs/JobsApi.md#search_jobs) | **POST** /jobs | List or search humanitarian job offers.
 *ReliefWebAPI::ReportsApi* | [**get_report_by_id**](docs/ReportsApi.md#get_report_by_id) | **GET** /reports/{reportId} | Find report by its unique ID
-*ReliefWebAPI::ReportsApi* | [**get_reports**](docs/ReportsApi.md#get_reports) | **GET** /reports | List or search updates, headlines or maps. 
-*ReliefWebAPI::ReportsApi* | [**search_reports**](docs/ReportsApi.md#search_reports) | **POST** /reports | List or search updates, headlines or maps. 
+*ReliefWebAPI::ReportsApi* | [**get_reports**](docs/ReportsApi.md#get_reports) | **GET** /reports | List or search updates, headlines or maps.
+*ReliefWebAPI::ReportsApi* | [**search_reports**](docs/ReportsApi.md#search_reports) | **POST** /reports | List or search updates, headlines or maps.
 *ReliefWebAPI::SourcesApi* | [**get_source_by_id**](docs/SourcesApi.md#get_source_by_id) | **GET** /sources/{sourceId} | Find source by its unique ID
-*ReliefWebAPI::SourcesApi* | [**get_sources**](docs/SourcesApi.md#get_sources) | **GET** /sources | List or search organizations providing content to ReliefWeb. 
-*ReliefWebAPI::SourcesApi* | [**search_sources**](docs/SourcesApi.md#search_sources) | **POST** /sources | List or search organizations providing content to ReliefWeb. 
-*ReliefWebAPI::TrainingApi* | [**get_training**](docs/TrainingApi.md#get_training) | **GET** /training | List or search humanitarian learning opportunities. 
+*ReliefWebAPI::SourcesApi* | [**get_sources**](docs/SourcesApi.md#get_sources) | **GET** /sources | List or search organizations providing content to ReliefWeb.
+*ReliefWebAPI::SourcesApi* | [**search_sources**](docs/SourcesApi.md#search_sources) | **POST** /sources | List or search organizations providing content to ReliefWeb.
+*ReliefWebAPI::TrainingApi* | [**get_training**](docs/TrainingApi.md#get_training) | **GET** /training | List or search humanitarian learning opportunities.
 *ReliefWebAPI::TrainingApi* | [**get_training_by_id**](docs/TrainingApi.md#get_training_by_id) | **GET** /training/{trainingId} | Find training by its unique ID
-*ReliefWebAPI::TrainingApi* | [**search_training**](docs/TrainingApi.md#search_training) | **POST** /training | List or search humanitarian learning opportunities. 
+*ReliefWebAPI::TrainingApi* | [**search_training**](docs/TrainingApi.md#search_training) | **POST** /training | List or search humanitarian learning opportunities.
 
 
 ## Documentation for Models
@@ -161,4 +161,3 @@ Class | Method | HTTP request | Description
 ## Documentation for Authorization
 
  All endpoints do not require authorization.
-

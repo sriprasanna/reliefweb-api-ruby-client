@@ -13,26 +13,12 @@ For more information, please visit [https://reliefweb.int/contact](https://relie
 
 ## Installation
 
-### Build a gem
+### Install from RubyGems
 
-To build the Ruby code into a gem:
-
-```shell
-gem build reliefweb-api.gemspec
+Add this to the Gemfile:
 ```
-
-Then either install the gem locally:
-
-```shell
-gem install ./reliefweb-api-1.0.0.gem
+gem 'reliefweb-api', '~> 1.0.0'
 ```
-(for development, run `gem install --dev ./reliefweb-api-1.0.0.gem` to install the development dependencies)
-
-or publish the gem to a gem hosting service, e.g. [RubyGems](https://rubygems.org/).
-
-Finally add this to the Gemfile:
-
-    gem 'reliefweb-api', '~> 1.0.0'
 
 ### Install from Git
 

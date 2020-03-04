@@ -1,4 +1,4 @@
-# SwaggerClient::Language
+# ReliefWebAPI::Language
 
 ## Properties
 Name | Type | Description | Notes

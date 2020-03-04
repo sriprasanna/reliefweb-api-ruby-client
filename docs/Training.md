@@ -1,4 +1,4 @@
-# SwaggerClient::Training
+# ReliefWebAPI::Training
 
 ## Properties
 Name | Type | Description | Notes

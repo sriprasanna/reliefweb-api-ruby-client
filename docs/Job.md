@@ -1,4 +1,4 @@
-# SwaggerClient::Job
+# ReliefWebAPI::Job
 
 ## Properties
 Name | Type | Description | Notes

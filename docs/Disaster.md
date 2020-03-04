@@ -1,4 +1,4 @@
-# SwaggerClient::Disaster
+# ReliefWebAPI::Disaster
 
 ## Properties
 Name | Type | Description | Notes

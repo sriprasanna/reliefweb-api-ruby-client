@@ -1,0 +1,8 @@
+{
+  "gemName": "reliefweb-api",
+  "moduleName": "ReliefWebAPI",
+  "gemVersion": "1.0.0",
+  "gemLicense": "MIT",
+  "gemHomepage": "https://apidoc.rwlabs.org/",
+  "gemAuthor": "Sri Prasanna Karuppapillai"
+}

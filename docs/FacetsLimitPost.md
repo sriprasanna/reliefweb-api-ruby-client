@@ -1,4 +1,4 @@
-# SwaggerClient::FacetsLimitPost
+# ReliefWebAPI::FacetsLimitPost
 
 ## Properties
 Name | Type | Description | Notes

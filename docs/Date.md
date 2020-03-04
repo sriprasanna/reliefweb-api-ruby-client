@@ -1,4 +1,4 @@
-# SwaggerClient::Date
+# ReliefWebAPI::Date
 
 ## Properties
 Name | Type | Description | Notes

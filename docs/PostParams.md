@@ -1,4 +1,4 @@
-# SwaggerClient::PostParams
+# ReliefWebAPI::PostParams
 
 ## Properties
 Name | Type | Description | Notes

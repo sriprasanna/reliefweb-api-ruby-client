@@ -1,4 +1,4 @@
-# SwaggerClient::FacetsNamePost
+# ReliefWebAPI::FacetsNamePost
 
 ## Properties
 Name | Type | Description | Notes

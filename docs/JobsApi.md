@@ -1,4 +1,4 @@
-# SwaggerClient::JobsApi
+# ReliefWebAPI::JobsApi
 
 All URIs are relative to *http://api.reliefweb.int/v1*
 
@@ -19,9 +19,9 @@ Individual jobs.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::JobsApi.new
+api_instance = ReliefWebAPI::JobsApi.new
 
 job_id = 'job_id_example' # String | The identifier of the job.
 
@@ -35,7 +35,7 @@ begin
   #Find job by its unique ID
   result = api_instance.get_job_by_id(job_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling JobsApi->get_job_by_id: #{e}"
 end
 ```
@@ -74,9 +74,9 @@ List or search humanitarian job offers.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::JobsApi.new
+api_instance = ReliefWebAPI::JobsApi.new
 
 opts = { 
   query_value: 'query_value_example', # String | Specify the terms of your fuzzy search. The default is no query. 
@@ -106,7 +106,7 @@ begin
   #List or search humanitarian job offers. 
   result = api_instance.get_jobs(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling JobsApi->get_jobs: #{e}"
 end
 ```
@@ -162,19 +162,19 @@ List or search humanitarian job offers.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::JobsApi.new
+api_instance = ReliefWebAPI::JobsApi.new
 
 opts = { 
-  fields: SwaggerClient::PostParams.new # PostParams | Returned fields
+  fields: ReliefWebAPI::PostParams.new # PostParams | Returned fields
 }
 
 begin
   #List or search humanitarian job offers. 
   result = api_instance.search_jobs(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling JobsApi->search_jobs: #{e}"
 end
 ```

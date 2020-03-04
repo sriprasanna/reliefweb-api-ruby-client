@@ -1,4 +1,4 @@
-# SwaggerClient::Country
+# ReliefWebAPI::Country
 
 ## Properties
 Name | Type | Description | Notes

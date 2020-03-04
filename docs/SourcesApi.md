@@ -1,4 +1,4 @@
-# SwaggerClient::SourcesApi
+# ReliefWebAPI::SourcesApi
 
 All URIs are relative to *http://api.reliefweb.int/v1*
 
@@ -19,9 +19,9 @@ Individual sources.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::SourcesApi.new
+api_instance = ReliefWebAPI::SourcesApi.new
 
 source_id = 'source_id_example' # String | The identifier of the source
 
@@ -35,7 +35,7 @@ begin
   #Find source by its unique ID
   result = api_instance.get_source_by_id(source_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling SourcesApi->get_source_by_id: #{e}"
 end
 ```
@@ -74,9 +74,9 @@ List or search organizations providing content to ReliefWeb.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::SourcesApi.new
+api_instance = ReliefWebAPI::SourcesApi.new
 
 opts = { 
   query_value: 'query_value_example', # String | Specify the terms of your fuzzy search. The default is no query. 
@@ -106,7 +106,7 @@ begin
   #List or search organizations providing content to ReliefWeb. 
   result = api_instance.get_sources(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling SourcesApi->get_sources: #{e}"
 end
 ```
@@ -162,19 +162,19 @@ List or search organizations providing content to ReliefWeb.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::SourcesApi.new
+api_instance = ReliefWebAPI::SourcesApi.new
 
 opts = { 
-  fields: SwaggerClient::PostParams.new # PostParams | Returned fields
+  fields: ReliefWebAPI::PostParams.new # PostParams | Returned fields
 }
 
 begin
   #List or search organizations providing content to ReliefWeb. 
   result = api_instance.search_sources(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling SourcesApi->search_sources: #{e}"
 end
 ```

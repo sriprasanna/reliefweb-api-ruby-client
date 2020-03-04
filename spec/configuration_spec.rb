@@ -12,14 +12,14 @@ Swagger Codegen version: 2.4.12
 
 require 'spec_helper'
 
-describe SwaggerClient::Configuration do
-  let(:config) { SwaggerClient::Configuration.default }
+describe ReliefWebAPI::Configuration do
+  let(:config) { ReliefWebAPI::Configuration.default }
 
   before(:each) do
     # uncomment below to setup host and base_path
     # require 'URI'
     # uri = URI.parse("http://api.reliefweb.int/v1")
-    # SwaggerClient.configure do |c|
+    # ReliefWebAPI.configure do |c|
     #   c.host = uri.host
     #   c.base_path = uri.path
     # end

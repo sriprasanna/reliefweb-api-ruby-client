@@ -1,4 +1,4 @@
-# SwaggerClient::File
+# ReliefWebAPI::File
 
 ## Properties
 Name | Type | Description | Notes

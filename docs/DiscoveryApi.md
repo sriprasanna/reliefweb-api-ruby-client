@@ -1,4 +1,4 @@
-# SwaggerClient::DiscoveryApi
+# ReliefWebAPI::DiscoveryApi
 
 All URIs are relative to *http://api.reliefweb.int/v1*
 
@@ -18,13 +18,13 @@ Review list of main entrypoints and top-level resources.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::DiscoveryApi.new
+api_instance = ReliefWebAPI::DiscoveryApi.new
 
 begin
   api_instance.discovery_resources
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling DiscoveryApi->discovery_resources: #{e}"
 end
 ```
@@ -57,13 +57,13 @@ Review location and status of all versions.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::DiscoveryApi.new
+api_instance = ReliefWebAPI::DiscoveryApi.new
 
 begin
   api_instance.discovery_versions
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling DiscoveryApi->discovery_versions: #{e}"
 end
 ```

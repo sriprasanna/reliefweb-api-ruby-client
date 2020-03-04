@@ -1,4 +1,4 @@
-# SwaggerClient::DisastersApi
+# ReliefWebAPI::DisastersApi
 
 All URIs are relative to *http://api.reliefweb.int/v1*
 
@@ -19,9 +19,9 @@ Individual disasters
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::DisastersApi.new
+api_instance = ReliefWebAPI::DisastersApi.new
 
 disaster_id = 'disaster_id_example' # String | The identifier of the disaster
 
@@ -35,7 +35,7 @@ begin
   #Find disaster by its unique ID
   result = api_instance.get_disaster_by_id(disaster_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling DisastersApi->get_disaster_by_id: #{e}"
 end
 ```
@@ -74,9 +74,9 @@ List or search disasters covered by ReliefWeb.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::DisastersApi.new
+api_instance = ReliefWebAPI::DisastersApi.new
 
 opts = { 
   query_value: 'query_value_example', # String | Specify the terms of your fuzzy search. The default is no query. 
@@ -106,7 +106,7 @@ begin
   #List or search disasters covered by ReliefWeb. 
   result = api_instance.get_disasters(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling DisastersApi->get_disasters: #{e}"
 end
 ```
@@ -162,19 +162,19 @@ List or search disasters covered by ReliefWeb.
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'reliefweb-api'
 
-api_instance = SwaggerClient::DisastersApi.new
+api_instance = ReliefWebAPI::DisastersApi.new
 
 opts = { 
-  fields: SwaggerClient::PostParams.new # PostParams | Returned fields
+  fields: ReliefWebAPI::PostParams.new # PostParams | Returned fields
 }
 
 begin
   #List or search disasters covered by ReliefWeb. 
   result = api_instance.search_disasters(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue ReliefWebAPI::ApiError => e
   puts "Exception when calling DisastersApi->search_disasters: #{e}"
 end
 ```

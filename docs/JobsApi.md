@@ -1,6 +1,6 @@
 # ReliefWebAPI::JobsApi
 
-All URIs are relative to *http://api.reliefweb.int/v1*
+All URIs are relative to *https://api.reliefweb.int/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

@@ -17,7 +17,7 @@ For more information, please visit [https://reliefweb.int/contact](https://relie
 
 Add this to the Gemfile:
 ```
-gem 'reliefweb-api', '~> 1.0.0'
+gem 'reliefweb-api'
 ```
 
 ### Install from Git
@@ -79,7 +79,7 @@ end
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://api.reliefweb.int/v1*
+All URIs are relative to *https://api.reliefweb.int/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

@@ -128,7 +128,7 @@ module ReliefWebAPI
     attr_accessor :force_ending_format
 
     def initialize
-      @scheme = 'http'
+      @scheme = 'https'
       @host = 'api.reliefweb.int'
       @base_path = '/v1'
       @api_key = {}
